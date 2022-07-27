@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font: 500 1rem 'Roboto', sans-serif;
+  color: rgb(78, 77, 77);
+}
+.t {
+  font: 700 2.2rem 'Roboto', sans-serif;
+  color: #000000;
+}
+.button {
+  background-color: rgb(255, 84, 33);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 0.3rem;
+  padding: 1rem 0;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.container {
+  margin: 1rem 1.5rem;
+}
+input {
+  background-color: rgba(229, 224, 230, 0.39);
+  padding: 0.8rem 1rem;
+  border: 0.5px solid rgb(207, 203, 203);
+}
+
+.fill-camp .title {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+.fill-camp .sub_title {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.fill-camp .sub_title h2 {
+  font-size: 1.4rem;
+}
+
+.auto_loan .fill_in_spaces {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 7.5rem;
+}
+.auto_loan .fill_in_spaces .bar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loan Calculator</title>
+
+    <link rel="stylesheet" href="assents/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container flex">
+      <section class="fill-camp flex">
+        <div class="title">
+          <h1 class="t">AUTO LOAN CALCULATOR</h1>
+          <p>
+            Find the perfect vehicle for your lifestyle and budget using the
+            Auto Loan Calculator.
+          </p>
+        </div>
+        <div class="sub_title">
+          <h2 class="t">MONTHLY PAYMENT</h2>
+          <p>Calculate monthly payment by entering a vehicle price.</p>
+        </div>
+        <div class="auto_loan flex">
+          <div class="fill_in_spaces">
+            <div class="bar">
+              <label for="">Amount of the loan ($):</label>
+              <input
+                type="number"
+                name="amount"
+                id="amount"
+                placeholder="1.000.000"
+              />
+            </div>
+
+            <div class="bar">
+              <label for="annual_interest">Annual interest (%):</label>
+              <input
+                type="number"
+                name="annual_interest"
+                id="annual_interest"
+                placeholder="5"
+              />
+            </div>
+
+            <div class="bar">
+              <label for="years">Repayment period (years):</label>
+              <input type="number" name="years" id="years" placeholder="30" />
+            </div>
+            <div class="bar">
+              <label for="zipcode">Zipcode (to find lenders):</label>
+              <input type="number" name="zipcode" id="zipcode" />
+            </div>
+          </div>
+          <p class="button" onclick="calculate()">Calculate</p>
+        </div>
+      </section>
+
+      <section class="info-calculate">
+        <div class="text-info">
+          <p>Monthly payment: <span id="payment"></span></p>
+          <p>Total payment: <span id="total"></span></p>
+          <p>Total interest: <span id="totalinterest"></span></p>
+        </div>
+        <div class="grafic"></div>
+      </section>
+    </main>
+    <script src="assents/script.js"></script>
+  </body>
+</html>
